@@ -49,9 +49,12 @@ export default function DealCard({ deal }: { deal: Deal }) {
             style={{ rotateX, rotateY }}
             whileHover={{ y: -8 }}
             transition={{ type: "spring", stiffness: 200, damping: 20 }}
-            className="relative rounded-xl border bg-white p-6 shadow-sm
-                 hover:shadow-xl hover:border-blue-200
-                 will-change-transform"
+            className="
+                   relative h-full rounded-xl border bg-white p-6
+                flex flex-col justify-between
+                shadow-sm hover:shadow-xl hover:border-blue-200
+                    will-change-transform
+                   "
         >
             {/* LOCKED OVERLAY */}
             {!deal.isPublic && (

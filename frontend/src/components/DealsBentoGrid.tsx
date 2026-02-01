@@ -2,7 +2,7 @@
 
 import DealCard from "./DealCard";
 
-type Deal = {
+export type Deal = {
     id: string;
     title: string;
     partner: string;

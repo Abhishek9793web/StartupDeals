@@ -1,8 +1,8 @@
 import PageTransition from "@/src/components/pageTransition";
-import DealCard from "@/src/components/DealCard";
-import DealsBentoGrid from "@/src/components/DealsBentoGrid";
 
-const deals = [
+import DealsBentoGrid, { Deal } from "@/src/components/DealsBentoGrid";
+
+const deals: Deal[] = [
     {
         id: "aws",
         title: "AWS Credits $5,000",
